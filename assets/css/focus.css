@@ -7,7 +7,8 @@ body {
 #task-list .task {
   display: block;
   padding: 15px;
-  font-size: 18px; }
+  font-size: 18px;
+  border-bottom: 1px solid #FAFAFA; }
 
 #add-task-view label {
   font-weight: bold; }
