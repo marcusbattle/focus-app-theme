@@ -10,6 +10,9 @@ body {
   font-size: 18px;
   border-bottom: 1px solid #FAFAFA; }
 
+#add-task-button-view #add-task-button {
+  border: none; }
+
 #add-task-view label {
   font-weight: bold; }
 #add-task-view input,
