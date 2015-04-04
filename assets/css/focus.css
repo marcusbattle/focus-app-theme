@@ -4,11 +4,13 @@ body {
   padding: 0;
   margin: 0; }
 
-#task-list .task {
-  display: block;
-  padding: 15px;
-  font-size: 18px;
-  border-bottom: 1px solid #FAFAFA; }
+#task-list {
+  padding-bottom: 80px; }
+  #task-list .task {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #FAFAFA; }
 
 #add-task-button-view #add-task-button {
   border: none; }
