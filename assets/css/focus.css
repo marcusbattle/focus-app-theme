@@ -1,0 +1,10 @@
+body {
+  font-family: Helvetica Neue;
+  font-weight: 300; }
+
+#task-list .task {
+  display: block;
+  padding: 15px;
+  font-size: 18px; }
+
+/*# sourceMappingURL=focus.css.map */
