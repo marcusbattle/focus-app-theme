@@ -1,10 +1,20 @@
 body {
   font-family: Helvetica Neue;
-  font-weight: 300; }
+  font-weight: 300;
+  padding: 0;
+  margin: 0; }
 
 #task-list .task {
   display: block;
   padding: 15px;
   font-size: 18px; }
+
+#add-task-view label {
+  font-weight: bold; }
+#add-task-view input,
+#add-task-view textarea,
+#add-task-view select {
+  width: 100%;
+  display: block; }
 
 /*# sourceMappingURL=focus.css.map */
