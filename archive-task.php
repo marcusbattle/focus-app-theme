@@ -9,12 +9,13 @@
 			<div id="task-list">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
 					<div class="task">
-						<span class="task-status">
+						<!-- <span class="task-status">
 							<i class="fa fa-square-o"></i>
-						</span>
+						</span> -->
 						<span class="task-title">
 							<?php the_title(); ?>
 						</span>
+						<span class="task-due-date"><?php echo date('l', get_post_meta( get_the_ID(), 'due_date', true ) ); ?></span>
 					</div>
 				<?php endwhile; else : ?>
 					<p><?php _e( 'Click the green button below to add your first task' ); ?></p>
