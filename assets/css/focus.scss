@@ -13,6 +13,7 @@ body {
 		padding: 15px;
 		font-size: 18px;
 		border-bottom: 1px solid #FAFAFA;
+		position: relative;
 
 		.task-title {
 			display: block;
@@ -23,6 +24,83 @@ body {
 			color: #CCC;
 			font-weight: bold;
 			letter-spacing: 1px;
+		}
+
+		&.selected {
+			
+			.actions {
+				display: inline-block;
+			}
+
+			.notes {
+				display: block;
+			}
+
+		}
+
+	}
+
+	.notes {
+		display: none;
+		margin-top: 15px;
+		border-top: 1px solid #eee;
+		color: #666;
+		background-color: #FAFAFA;
+		border-radius: 0 0 5px 5px;
+		font-size: 16px;
+
+		.note {
+			display: block;
+			padding: 15px;
+			border-bottom: 1px solid #EEE;
+
+			.note-date {
+				display: block;
+				font-size: 12px;
+				font-weight: bold;
+				color: #CCC;
+				padding: 7px 0;
+			}
+
+		}
+
+		textarea.new-note {
+			width: 100%;
+			border: 1px solid #CCC;
+			font: inherit;
+			resize: none;
+			margin-bottom: 15px;
+			padding: 7px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.add-note-button {
+			border: none;
+			line-height: 32px;
+			border: 2px solid #333;
+			border-radius: 4px;
+			background-color: transparent;
+			font-size: inherit;
+			padding: 0 20px;
+		}
+
+	}
+
+	.actions {
+		display: none;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+
+		a {
+			font-size: 24px;
+			color: inherit;
 		}
 
 	}

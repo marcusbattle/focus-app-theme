@@ -10,7 +10,8 @@ body {
     display: block;
     padding: 15px;
     font-size: 18px;
-    border-bottom: 1px solid #FAFAFA; }
+    border-bottom: 1px solid #FAFAFA;
+    position: relative; }
     #task-list .task .task-title {
       display: block; }
     #task-list .task .task-due-date {
@@ -18,6 +19,56 @@ body {
       color: #CCC;
       font-weight: bold;
       letter-spacing: 1px; }
+    #task-list .task.selected .actions {
+      display: inline-block; }
+    #task-list .task.selected .notes {
+      display: block; }
+  #task-list .notes {
+    display: none;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    color: #666;
+    background-color: #FAFAFA;
+    border-radius: 0 0 5px 5px;
+    font-size: 16px; }
+    #task-list .notes .note {
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #EEE; }
+      #task-list .notes .note .note-date {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        color: #CCC;
+        padding: 7px 0; }
+    #task-list .notes textarea.new-note {
+      width: 100%;
+      border: 1px solid #CCC;
+      font: inherit;
+      resize: none;
+      margin-bottom: 15px;
+      padding: 7px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      #task-list .notes textarea.new-note:focus {
+        outline: none; }
+    #task-list .notes .add-note-button {
+      border: none;
+      line-height: 32px;
+      border: 2px solid #333;
+      border-radius: 4px;
+      background-color: transparent;
+      font-size: inherit;
+      padding: 0 20px; }
+  #task-list .actions {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+    #task-list .actions a {
+      font-size: 24px;
+      color: inherit; }
 
 #add-task-button-view #add-task-button {
   border: none; }
