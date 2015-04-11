@@ -34,7 +34,8 @@ body {
     #task-list .notes .note {
       display: block;
       padding: 15px;
-      border-bottom: 1px solid #EEE; }
+      border-bottom: 1px solid #EEE;
+      cursor: pointer; }
       #task-list .notes .note .note-date {
         display: block;
         font-size: 12px;
