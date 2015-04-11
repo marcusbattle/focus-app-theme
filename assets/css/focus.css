@@ -11,7 +11,8 @@ body {
     padding: 15px;
     font-size: 18px;
     border-bottom: 1px solid #FAFAFA;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     #task-list .task .task-title {
       display: block; }
     #task-list .task .task-due-date {
@@ -34,8 +35,7 @@ body {
     #task-list .notes .note {
       display: block;
       padding: 15px;
-      border-bottom: 1px solid #EEE;
-      cursor: pointer; }
+      border-bottom: 1px solid #EEE; }
       #task-list .notes .note .note-date {
         display: block;
         font-size: 12px;
