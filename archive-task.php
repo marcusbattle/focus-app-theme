@@ -8,7 +8,7 @@
 		<?php if ( is_user_logged_in() ): ?>
 			<div id="task-list">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
-					<div class="task" data-task-id="<?php echo get_the_ID(); ?>">
+					<div class="task <?php echo get_post_meta( get_the_ID(), 'status', true ); ?>" data-task-id="<?php echo get_the_ID(); ?>">
 						<!-- <span class="task-status">
 							<i class="fa fa-square-o"></i>
 						</span> -->

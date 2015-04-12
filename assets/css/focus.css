@@ -13,8 +13,10 @@ body {
     border-bottom: 1px solid #FAFAFA;
     position: relative;
     cursor: pointer; }
-    #task-list .task sa
-    .task-due-date {
+    #task-list .task .task-title {
+      width: 100%;
+      display: block; }
+    #task-list .task .task-due-date {
       font-size: 12px;
       color: #CCC;
       font-weight: bold;
@@ -23,6 +25,8 @@ body {
       display: inline-block; }
     #task-list .task.selected .notes {
       display: block; }
+    #task-list .task.complete .task-title {
+      text-decoration: line-through; }
   #task-list .notes {
     display: none;
     margin-top: 15px;
