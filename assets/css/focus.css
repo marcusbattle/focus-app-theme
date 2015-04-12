@@ -65,6 +65,9 @@ body {
       background-color: transparent;
       font-size: inherit;
       padding: 0 20px; }
+    #task-list .notes .close-task {
+      font-size: 14px;
+      text-decoration: none; }
   #task-list .actions {
     display: none;
     position: absolute;
@@ -85,7 +88,7 @@ body {
   width: 100%;
   display: block; }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .task-title {
     width: 80%; } }
 

@@ -4,6 +4,7 @@ class FOCUS_Theme {
 	
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'styles_and_scripts' ) );
+		add_filter( 'show_admin_bar', '__return_false' );
 	}
 	
 	public function styles_and_scripts() {

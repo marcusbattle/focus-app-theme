@@ -37,7 +37,7 @@
 							<?php endforeach; ?>
 							<div class="note">
 								<textarea class="new-note" rows="3"></textarea>
-								<button class="add-note-button">Add Note</button>
+								<button class="add-note-button">Add Note</button> <a class="close-task" href="#">Close</a>
 							</div>
 						</div>
 					</div>
