@@ -28,8 +28,18 @@ body {
 			letter-spacing: 1px;
 		}
 
+		&.complete {
+			opacity: .2;
+
+			.task-title {
+				text-decoration: line-through;
+			}
+
+		}
+		
 		&.selected {
-			
+			opacity: 1;
+
 			.actions {
 				display: inline-block;
 			}
@@ -40,13 +50,7 @@ body {
 
 		}
 
-		&.complete {
-
-			.task-title {
-				text-decoration: line-through;
-			}
-
-		}
+		
 	}
 
 	.notes {
