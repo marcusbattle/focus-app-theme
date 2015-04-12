@@ -15,10 +15,8 @@ body {
 		border-bottom: 1px solid #FAFAFA;
 		position: relative;
 		cursor: pointer;
-		
-		.task-title {
-			display: block;
-		}
+
+		sa
 
 		.task-due-date {
 			font-size: 12px;
@@ -127,6 +125,14 @@ body {
 	select {
 		width: 100%;
 		display: block;
+	}
+
+}
+
+@media (min-width: 768px)  {
+
+	.task-title {
+		width: 80%;
 	}
 
 }

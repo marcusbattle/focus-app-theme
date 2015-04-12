@@ -13,9 +13,8 @@ body {
     border-bottom: 1px solid #FAFAFA;
     position: relative;
     cursor: pointer; }
-    #task-list .task .task-title {
-      display: block; }
-    #task-list .task .task-due-date {
+    #task-list .task sa
+    .task-due-date {
       font-size: 12px;
       color: #CCC;
       font-weight: bold;
@@ -81,5 +80,9 @@ body {
 #add-task-view select {
   width: 100%;
   display: block; }
+
+@media (min-width: 768px) {
+  .task-title {
+    width: 80%; } }
 
 /*# sourceMappingURL=focus.css.map */
