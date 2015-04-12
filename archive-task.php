@@ -13,7 +13,7 @@
 							<i class="fa fa-square-o"></i>
 						</span> -->
 						<span class="task-title"><?php the_title(); ?></span>
-						<span class="task-due-date"><?php echo date('l', get_post_meta( get_the_ID(), 'due_date', true ) ); ?></span>
+						<span class="task-due-date">Due <?php echo apply_filters('task_due_date', get_the_ID() ); ?></span>
 						<div class="actions">
 							<a class="complete" href="#"><i class="fa fa-check"></i></a>
 							<a class="delete" href="#"><i class="fa fa-trash"></i></a>
