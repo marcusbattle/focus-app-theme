@@ -19,9 +19,9 @@ class FOCUS_Theme {
 		$due_date = get_post_meta( $task_id, 'due_date', true );
 
 		if ( $current_time > $due_date ) {
-			$due_date = human_time_diff( get_comment_time('U'), current_time('timestamp') ) . ' ago';
+			$due_date = human_time_diff( $due_date, current_time('timestamp') ) . ' ago';
 		} else {
-			echo "new stuff";
+			$due_date = date('l', get_post_meta( $task_id, 'due_date', true ) );
 		}
 
 		return $due_date;
